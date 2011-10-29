@@ -16,11 +16,13 @@ This is an installation manual for the Arduino Blink example implemented in an E
 - Install Eclipse for C/C++ developers
 
 *Install Eclipse AVR plugin*
+
 - Go to Help -> Install New Software
 - At Work with: fill in http://avr-eclipse.sourceforge.net/updatesite/, click Add
 - Check AVR Eclipse Plugin, click next and finish the installation
 
 *Import GIT repository*
+
 - Go to File -> Import -> Git -> Projects from Git
 - Click Clone
 - At URI: fill in https://github.com/allgood38/Arduino-Blink-Eclipse-Project.git
@@ -28,12 +30,15 @@ This is an installation manual for the Arduino Blink example implemented in an E
 - Check Import Existing Projects and finish the wizard
 
 *Build Arduino Core Library*
+
 - Right click on the project and go to Project Properties
 - Go to AVR -> AVRDude and click New
 - Select the right programmer hardware (stk500v2 for the Arduino Mega 2560, else arduino)
 - Specify the right port (On windows: COMx, see Device Manager. On mac osx/linuxL /dev/tty.xxx, check /dev/ folder)
 - Select the right speed...
+- 
 > (115200 for the stk500v2, 19200 for Arduinos based on the ATmega168, or 57600 for Arduinos based on the ATmega328p)
+
 - Go to AVR -> Target hardware, click Load from MCU. If this works, uploading should work too.
 - Build the project by clicking the hammer icon
 
