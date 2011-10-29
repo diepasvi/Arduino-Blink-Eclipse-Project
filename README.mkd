@@ -36,7 +36,7 @@ This is an installation manual for the Arduino Blink example implemented in an E
 - Select the right programmer hardware (stk500v2 for the Arduino Mega 2560, else arduino)
 - Specify the right port (On windows: COMx, see Device Manager. On mac osx/linuxL /dev/tty.xxx, check /dev/ folder)
 - Select the right speed...
-- 
+
 > (115200 for the stk500v2, 19200 for Arduinos based on the ATmega168, or 57600 for Arduinos based on the ATmega328p)
 
 - Go to AVR -> Target hardware, click Load from MCU. If this works, uploading should work too.
